@@ -1,0 +1,7 @@
+
+State Machine - |semaforo|agora
+Name agora.am_ruab agora.ab_ruab agora.am_ruaa agora.ab_ruaa 
+agora.ab_ruaa 0 0 0 0 
+agora.am_ruaa 0 0 1 1 
+agora.ab_ruab 0 1 0 1 
+agora.am_ruab 1 0 0 1 

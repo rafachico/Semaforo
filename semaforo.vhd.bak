@@ -1,0 +1,29 @@
+LIBRARY ieee;--chama as bibliotecas
+USE ieee.std_logic_1164.all;
+USE ieee.numeric_std.all;
+
+entity semaforo is
+GENERIC (div : INTEGER := 50);
+	port(
+		clk 		:	in		bit;
+		sd,se 	:	in		bit:
+		sem		:	out	bit
+	);
+
+architecture func of semaforo is
+SIGNAL temp: INTEGER RANGE 0 TO div;
+teste: process(clk)
+begin
+	if rising_edge(clk)
+		if (temp /= div) then
+			temp <= temp + 1;
+		else
+		temp<=0;
+		sem<='1';
+		end if;
+	end if;
+end process;
+end;
+		
+
+	

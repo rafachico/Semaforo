@@ -1,0 +1,504 @@
+Simulator report for semaforo
+Wed Oct 07 19:50:34 2020
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 1.0 us       ;
+; Simulation Netlist Size     ; 238 nodes    ;
+; Simulation Coverage         ;      56.30 % ;
+; Total Number of Transitions ; 41397        ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone II   ;
++-----------------------------+--------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                                                              ;
++--------------------------------------------------------------------------------------------+----------------------------------------------------+---------------+
+; Option                                                                                     ; Setting                                            ; Default Value ;
++--------------------------------------------------------------------------------------------+----------------------------------------------------+---------------+
+; Simulation mode                                                                            ; Functional                                         ; Timing        ;
+; Start time                                                                                 ; 0 ns                                               ; 0 ns          ;
+; Simulation results format                                                                  ; VWF                                                ;               ;
+; Vector input source                                                                        ; D:/altera/13.0sp1/miniproj/semaforo/Waveform16.vwf ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On                                                 ; On            ;
+; Check outputs                                                                              ; Off                                                ; Off           ;
+; Report simulation coverage                                                                 ; On                                                 ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On                                                 ; On            ;
+; Display missing 1-value coverage report                                                    ; On                                                 ; On            ;
+; Display missing 0-value coverage report                                                    ; On                                                 ; On            ;
+; Detect setup and hold time violations                                                      ; Off                                                ; Off           ;
+; Detect glitches                                                                            ; Off                                                ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off                                                ; Off           ;
+; Generate Signal Activity File                                                              ; Off                                                ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off                                                ; Off           ;
+; Group bus channels in simulation results                                                   ; Off                                                ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On                                                 ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE                                         ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off                                                ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off                                                ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto                                               ; Auto          ;
++--------------------------------------------------------------------------------------------+----------------------------------------------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II 64-Bit to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      56.30 % ;
+; Total nodes checked                                 ; 238          ;
+; Total output ports checked                          ; 238          ;
+; Total output ports with complete 1/0-value coverage ; 134          ;
+; Total output ports with no 1/0-value coverage       ; 104          ;
+; Total output ports with no 1-value coverage         ; 104          ;
+; Total output ports with no 0-value coverage         ; 104          ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                              ;
++-----------------------------------+-----------------------------------+------------------+
+; Node Name                         ; Output Port Name                  ; Output Port Type ;
++-----------------------------------+-----------------------------------+------------------+
+; |semaforo|current_state.HGRE_FRED ; |semaforo|current_state.HGRE_FRED ; regout           ;
+; |semaforo|current_state.HYEL_FRED ; |semaforo|current_state.HYEL_FRED ; regout           ;
+; |semaforo|current_state.HRED_FGRE ; |semaforo|current_state.HRED_FGRE ; regout           ;
+; |semaforo|light_highway~2         ; |semaforo|light_highway~2         ; out0             ;
+; |semaforo|process_2~0             ; |semaforo|process_2~0             ; out0             ;
+; |semaforo|process_2~1             ; |semaforo|process_2~1             ; out0             ;
+; |semaforo|process_2~2             ; |semaforo|process_2~2             ; out0             ;
+; |semaforo|counter_1s[1]           ; |semaforo|counter_1s[1]           ; regout           ;
+; |semaforo|process_2~3             ; |semaforo|process_2~3             ; out0             ;
+; |semaforo|counter_1s[0]           ; |semaforo|counter_1s[0]           ; regout           ;
+; |semaforo|process_2~4             ; |semaforo|process_2~4             ; out0             ;
+; |semaforo|delay_3s_H~0            ; |semaforo|delay_3s_H~0            ; out              ;
+; |semaforo|delay_3s_F~0            ; |semaforo|delay_3s_F~0            ; out              ;
+; |semaforo|delay_3s_F~1            ; |semaforo|delay_3s_F~1            ; out              ;
+; |semaforo|delay_count~0           ; |semaforo|delay_count~0           ; out              ;
+; |semaforo|delay_count~1           ; |semaforo|delay_count~1           ; out              ;
+; |semaforo|delay_count~2           ; |semaforo|delay_count~2           ; out              ;
+; |semaforo|delay_count~3           ; |semaforo|delay_count~3           ; out              ;
+; |semaforo|delay_count~4           ; |semaforo|delay_count~4           ; out              ;
+; |semaforo|delay_count~5           ; |semaforo|delay_count~5           ; out              ;
+; |semaforo|delay_count~6           ; |semaforo|delay_count~6           ; out              ;
+; |semaforo|delay_count~7           ; |semaforo|delay_count~7           ; out              ;
+; |semaforo|delay_count~8           ; |semaforo|delay_count~8           ; out              ;
+; |semaforo|delay_count~9           ; |semaforo|delay_count~9           ; out              ;
+; |semaforo|delay_count~10          ; |semaforo|delay_count~10          ; out              ;
+; |semaforo|delay_count~11          ; |semaforo|delay_count~11          ; out              ;
+; |semaforo|delay_count~12          ; |semaforo|delay_count~12          ; out              ;
+; |semaforo|delay_count~13          ; |semaforo|delay_count~13          ; out              ;
+; |semaforo|delay_count~14          ; |semaforo|delay_count~14          ; out              ;
+; |semaforo|delay_count~15          ; |semaforo|delay_count~15          ; out              ;
+; |semaforo|delay_10s~0             ; |semaforo|delay_10s~0             ; out              ;
+; |semaforo|delay_3s_H~1            ; |semaforo|delay_3s_H~1            ; out              ;
+; |semaforo|delay_3s_F~2            ; |semaforo|delay_3s_F~2            ; out              ;
+; |semaforo|current_state.HRED_FYEL ; |semaforo|current_state.HRED_FYEL ; regout           ;
+; |semaforo|counter_1s~25           ; |semaforo|counter_1s~25           ; out              ;
+; |semaforo|counter_1s~26           ; |semaforo|counter_1s~26           ; out              ;
+; |semaforo|counter_1s~27           ; |semaforo|counter_1s~27           ; out              ;
+; |semaforo|delay_3s_F              ; |semaforo|delay_3s_F              ; regout           ;
+; |semaforo|delay_3s_H              ; |semaforo|delay_3s_H              ; regout           ;
+; |semaforo|delay_10s               ; |semaforo|delay_10s               ; regout           ;
+; |semaforo|delay_count[0]          ; |semaforo|delay_count[0]          ; regout           ;
+; |semaforo|delay_count[1]          ; |semaforo|delay_count[1]          ; regout           ;
+; |semaforo|delay_count[2]          ; |semaforo|delay_count[2]          ; regout           ;
+; |semaforo|delay_count[3]          ; |semaforo|delay_count[3]          ; regout           ;
+; |semaforo|sensor                  ; |semaforo|sensor                  ; out              ;
+; |semaforo|clk                     ; |semaforo|clk                     ; out              ;
+; |semaforo|light_highway[0]        ; |semaforo|light_highway[0]        ; pin_out          ;
+; |semaforo|light_highway[1]        ; |semaforo|light_highway[1]        ; pin_out          ;
+; |semaforo|light_highway[2]        ; |semaforo|light_highway[2]        ; pin_out          ;
+; |semaforo|light_farm[0]           ; |semaforo|light_farm[0]           ; pin_out          ;
+; |semaforo|light_farm[1]           ; |semaforo|light_farm[1]           ; pin_out          ;
+; |semaforo|light_farm[2]           ; |semaforo|light_farm[2]           ; pin_out          ;
+; |semaforo|current_state~0         ; |semaforo|current_state~0         ; out0             ;
+; |semaforo|light_highway~4         ; |semaforo|light_highway~4         ; out0             ;
+; |semaforo|YELLOW_LIGHT1_ENABLE    ; |semaforo|YELLOW_LIGHT1_ENABLE    ; out0             ;
+; |semaforo|RED_LIGHT_ENABLE        ; |semaforo|RED_LIGHT_ENABLE        ; out0             ;
+; |semaforo|YELLOW_LIGHT2_ENABLE    ; |semaforo|YELLOW_LIGHT2_ENABLE    ; out0             ;
+; |semaforo|current_state~5         ; |semaforo|current_state~5         ; out0             ;
+; |semaforo|Selector0~1             ; |semaforo|Selector0~1             ; out0             ;
+; |semaforo|Selector0~2             ; |semaforo|Selector0~2             ; out0             ;
+; |semaforo|Selector0~3             ; |semaforo|Selector0~3             ; out0             ;
+; |semaforo|Selector1~0             ; |semaforo|Selector1~0             ; out0             ;
+; |semaforo|Selector1~1             ; |semaforo|Selector1~1             ; out0             ;
+; |semaforo|Selector1~2             ; |semaforo|Selector1~2             ; out0             ;
+; |semaforo|Selector2~0             ; |semaforo|Selector2~0             ; out0             ;
+; |semaforo|Selector2~1             ; |semaforo|Selector2~1             ; out0             ;
+; |semaforo|Selector2~2             ; |semaforo|Selector2~2             ; out0             ;
+; |semaforo|Selector3~0             ; |semaforo|Selector3~0             ; out0             ;
+; |semaforo|Selector3~1             ; |semaforo|Selector3~1             ; out0             ;
+; |semaforo|Selector3~2             ; |semaforo|Selector3~2             ; out0             ;
+; |semaforo|LessThan0~0             ; |semaforo|LessThan0~0             ; out0             ;
+; |semaforo|LessThan0~1             ; |semaforo|LessThan0~1             ; out0             ;
+; |semaforo|LessThan0~2             ; |semaforo|LessThan0~2             ; out0             ;
+; |semaforo|LessThan0~3             ; |semaforo|LessThan0~3             ; out0             ;
+; |semaforo|LessThan0~4             ; |semaforo|LessThan0~4             ; out0             ;
+; |semaforo|LessThan0~5             ; |semaforo|LessThan0~5             ; out0             ;
+; |semaforo|LessThan0~6             ; |semaforo|LessThan0~6             ; out0             ;
+; |semaforo|LessThan0~7             ; |semaforo|LessThan0~7             ; out0             ;
+; |semaforo|LessThan0~8             ; |semaforo|LessThan0~8             ; out0             ;
+; |semaforo|LessThan0~9             ; |semaforo|LessThan0~9             ; out0             ;
+; |semaforo|LessThan0~10            ; |semaforo|LessThan0~10            ; out0             ;
+; |semaforo|LessThan0~11            ; |semaforo|LessThan0~11            ; out0             ;
+; |semaforo|LessThan0~12            ; |semaforo|LessThan0~12            ; out0             ;
+; |semaforo|LessThan0~13            ; |semaforo|LessThan0~13            ; out0             ;
+; |semaforo|LessThan0~14            ; |semaforo|LessThan0~14            ; out0             ;
+; |semaforo|LessThan0~15            ; |semaforo|LessThan0~15            ; out0             ;
+; |semaforo|LessThan0~16            ; |semaforo|LessThan0~16            ; out0             ;
+; |semaforo|LessThan0~17            ; |semaforo|LessThan0~17            ; out0             ;
+; |semaforo|LessThan0~18            ; |semaforo|LessThan0~18            ; out0             ;
+; |semaforo|LessThan0~19            ; |semaforo|LessThan0~19            ; out0             ;
+; |semaforo|LessThan0~20            ; |semaforo|LessThan0~20            ; out0             ;
+; |semaforo|LessThan0~21            ; |semaforo|LessThan0~21            ; out0             ;
+; |semaforo|LessThan0~22            ; |semaforo|LessThan0~22            ; out0             ;
+; |semaforo|LessThan0~23            ; |semaforo|LessThan0~23            ; out0             ;
+; |semaforo|LessThan0~24            ; |semaforo|LessThan0~24            ; out0             ;
+; |semaforo|LessThan0~25            ; |semaforo|LessThan0~25            ; out0             ;
+; |semaforo|LessThan0~26            ; |semaforo|LessThan0~26            ; out0             ;
+; |semaforo|LessThan0~27            ; |semaforo|LessThan0~27            ; out0             ;
+; |semaforo|LessThan0~28            ; |semaforo|LessThan0~28            ; out0             ;
+; |semaforo|LessThan0~29            ; |semaforo|LessThan0~29            ; out0             ;
+; |semaforo|LessThan0~30            ; |semaforo|LessThan0~30            ; out0             ;
+; |semaforo|LessThan0~31            ; |semaforo|LessThan0~31            ; out0             ;
+; |semaforo|LessThan0~32            ; |semaforo|LessThan0~32            ; out0             ;
+; |semaforo|LessThan0~33            ; |semaforo|LessThan0~33            ; out0             ;
+; |semaforo|LessThan0~34            ; |semaforo|LessThan0~34            ; out0             ;
+; |semaforo|LessThan0~35            ; |semaforo|LessThan0~35            ; out0             ;
+; |semaforo|LessThan0~36            ; |semaforo|LessThan0~36            ; out0             ;
+; |semaforo|LessThan0~37            ; |semaforo|LessThan0~37            ; out0             ;
+; |semaforo|LessThan0~38            ; |semaforo|LessThan0~38            ; out0             ;
+; |semaforo|LessThan0~39            ; |semaforo|LessThan0~39            ; out0             ;
+; |semaforo|LessThan0~40            ; |semaforo|LessThan0~40            ; out0             ;
+; |semaforo|LessThan0~41            ; |semaforo|LessThan0~41            ; out0             ;
+; |semaforo|LessThan0~42            ; |semaforo|LessThan0~42            ; out0             ;
+; |semaforo|LessThan0~43            ; |semaforo|LessThan0~43            ; out0             ;
+; |semaforo|LessThan0~44            ; |semaforo|LessThan0~44            ; out0             ;
+; |semaforo|LessThan0~45            ; |semaforo|LessThan0~45            ; out0             ;
+; |semaforo|LessThan0~46            ; |semaforo|LessThan0~46            ; out0             ;
+; |semaforo|LessThan0~47            ; |semaforo|LessThan0~47            ; out0             ;
+; |semaforo|LessThan0~48            ; |semaforo|LessThan0~48            ; out0             ;
+; |semaforo|LessThan0~49            ; |semaforo|LessThan0~49            ; out0             ;
+; |semaforo|LessThan0~50            ; |semaforo|LessThan0~50            ; out0             ;
+; |semaforo|LessThan0~51            ; |semaforo|LessThan0~51            ; out0             ;
+; |semaforo|LessThan0~52            ; |semaforo|LessThan0~52            ; out0             ;
+; |semaforo|Add0~0                  ; |semaforo|Add0~0                  ; out0             ;
+; |semaforo|Add0~1                  ; |semaforo|Add0~1                  ; out0             ;
+; |semaforo|Add0~2                  ; |semaforo|Add0~2                  ; out0             ;
+; |semaforo|Add0~3                  ; |semaforo|Add0~3                  ; out0             ;
+; |semaforo|Add0~4                  ; |semaforo|Add0~4                  ; out0             ;
+; |semaforo|Add1~0                  ; |semaforo|Add1~0                  ; out0             ;
+; |semaforo|Add1~1                  ; |semaforo|Add1~1                  ; out0             ;
+; |semaforo|Add1~2                  ; |semaforo|Add1~2                  ; out0             ;
+; |semaforo|Equal0~0                ; |semaforo|Equal0~0                ; out0             ;
+; |semaforo|Equal1~0                ; |semaforo|Equal1~0                ; out0             ;
+; |semaforo|Equal2~0                ; |semaforo|Equal2~0                ; out0             ;
++-----------------------------------+-----------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++--------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                 ;
++---------------------------+---------------------------+------------------+
+; Node Name                 ; Output Port Name          ; Output Port Type ;
++---------------------------+---------------------------+------------------+
+; |semaforo|counter_1s[18]  ; |semaforo|counter_1s[18]  ; regout           ;
+; |semaforo|counter_1s[17]  ; |semaforo|counter_1s[17]  ; regout           ;
+; |semaforo|counter_1s[16]  ; |semaforo|counter_1s[16]  ; regout           ;
+; |semaforo|counter_1s[15]  ; |semaforo|counter_1s[15]  ; regout           ;
+; |semaforo|counter_1s[14]  ; |semaforo|counter_1s[14]  ; regout           ;
+; |semaforo|counter_1s[13]  ; |semaforo|counter_1s[13]  ; regout           ;
+; |semaforo|counter_1s[12]  ; |semaforo|counter_1s[12]  ; regout           ;
+; |semaforo|counter_1s[11]  ; |semaforo|counter_1s[11]  ; regout           ;
+; |semaforo|counter_1s[10]  ; |semaforo|counter_1s[10]  ; regout           ;
+; |semaforo|counter_1s[9]   ; |semaforo|counter_1s[9]   ; regout           ;
+; |semaforo|counter_1s[8]   ; |semaforo|counter_1s[8]   ; regout           ;
+; |semaforo|counter_1s[7]   ; |semaforo|counter_1s[7]   ; regout           ;
+; |semaforo|counter_1s[6]   ; |semaforo|counter_1s[6]   ; regout           ;
+; |semaforo|counter_1s[5]   ; |semaforo|counter_1s[5]   ; regout           ;
+; |semaforo|counter_1s[4]   ; |semaforo|counter_1s[4]   ; regout           ;
+; |semaforo|counter_1s[3]   ; |semaforo|counter_1s[3]   ; regout           ;
+; |semaforo|counter_1s[2]   ; |semaforo|counter_1s[2]   ; regout           ;
+; |semaforo|counter_1s~0    ; |semaforo|counter_1s~0    ; out              ;
+; |semaforo|counter_1s~1    ; |semaforo|counter_1s~1    ; out              ;
+; |semaforo|counter_1s~2    ; |semaforo|counter_1s~2    ; out              ;
+; |semaforo|counter_1s~3    ; |semaforo|counter_1s~3    ; out              ;
+; |semaforo|counter_1s~4    ; |semaforo|counter_1s~4    ; out              ;
+; |semaforo|counter_1s~5    ; |semaforo|counter_1s~5    ; out              ;
+; |semaforo|counter_1s~6    ; |semaforo|counter_1s~6    ; out              ;
+; |semaforo|counter_1s~7    ; |semaforo|counter_1s~7    ; out              ;
+; |semaforo|counter_1s~8    ; |semaforo|counter_1s~8    ; out              ;
+; |semaforo|counter_1s~9    ; |semaforo|counter_1s~9    ; out              ;
+; |semaforo|counter_1s~10   ; |semaforo|counter_1s~10   ; out              ;
+; |semaforo|counter_1s~11   ; |semaforo|counter_1s~11   ; out              ;
+; |semaforo|counter_1s~12   ; |semaforo|counter_1s~12   ; out              ;
+; |semaforo|counter_1s~13   ; |semaforo|counter_1s~13   ; out              ;
+; |semaforo|counter_1s~14   ; |semaforo|counter_1s~14   ; out              ;
+; |semaforo|counter_1s~15   ; |semaforo|counter_1s~15   ; out              ;
+; |semaforo|counter_1s~16   ; |semaforo|counter_1s~16   ; out              ;
+; |semaforo|counter_1s~17   ; |semaforo|counter_1s~17   ; out              ;
+; |semaforo|counter_1s~18   ; |semaforo|counter_1s~18   ; out              ;
+; |semaforo|counter_1s~19   ; |semaforo|counter_1s~19   ; out              ;
+; |semaforo|counter_1s~20   ; |semaforo|counter_1s~20   ; out              ;
+; |semaforo|counter_1s~21   ; |semaforo|counter_1s~21   ; out              ;
+; |semaforo|counter_1s~22   ; |semaforo|counter_1s~22   ; out              ;
+; |semaforo|counter_1s~23   ; |semaforo|counter_1s~23   ; out              ;
+; |semaforo|counter_1s~24   ; |semaforo|counter_1s~24   ; out              ;
+; |semaforo|counter_1s[19]  ; |semaforo|counter_1s[19]  ; regout           ;
+; |semaforo|counter_1s[20]  ; |semaforo|counter_1s[20]  ; regout           ;
+; |semaforo|counter_1s[21]  ; |semaforo|counter_1s[21]  ; regout           ;
+; |semaforo|counter_1s[22]  ; |semaforo|counter_1s[22]  ; regout           ;
+; |semaforo|counter_1s[23]  ; |semaforo|counter_1s[23]  ; regout           ;
+; |semaforo|counter_1s[24]  ; |semaforo|counter_1s[24]  ; regout           ;
+; |semaforo|counter_1s[25]  ; |semaforo|counter_1s[25]  ; regout           ;
+; |semaforo|counter_1s[26]  ; |semaforo|counter_1s[26]  ; regout           ;
+; |semaforo|counter_1s[27]  ; |semaforo|counter_1s[27]  ; regout           ;
+; |semaforo|rst_n           ; |semaforo|rst_n           ; out              ;
+; |semaforo|current_state~1 ; |semaforo|current_state~1 ; out0             ;
+; |semaforo|current_state~9 ; |semaforo|current_state~9 ; out0             ;
+; |semaforo|Add1~3          ; |semaforo|Add1~3          ; out0             ;
+; |semaforo|Add1~4          ; |semaforo|Add1~4          ; out0             ;
+; |semaforo|Add1~5          ; |semaforo|Add1~5          ; out0             ;
+; |semaforo|Add1~6          ; |semaforo|Add1~6          ; out0             ;
+; |semaforo|Add1~7          ; |semaforo|Add1~7          ; out0             ;
+; |semaforo|Add1~8          ; |semaforo|Add1~8          ; out0             ;
+; |semaforo|Add1~9          ; |semaforo|Add1~9          ; out0             ;
+; |semaforo|Add1~10         ; |semaforo|Add1~10         ; out0             ;
+; |semaforo|Add1~11         ; |semaforo|Add1~11         ; out0             ;
+; |semaforo|Add1~12         ; |semaforo|Add1~12         ; out0             ;
+; |semaforo|Add1~13         ; |semaforo|Add1~13         ; out0             ;
+; |semaforo|Add1~14         ; |semaforo|Add1~14         ; out0             ;
+; |semaforo|Add1~15         ; |semaforo|Add1~15         ; out0             ;
+; |semaforo|Add1~16         ; |semaforo|Add1~16         ; out0             ;
+; |semaforo|Add1~17         ; |semaforo|Add1~17         ; out0             ;
+; |semaforo|Add1~18         ; |semaforo|Add1~18         ; out0             ;
+; |semaforo|Add1~19         ; |semaforo|Add1~19         ; out0             ;
+; |semaforo|Add1~20         ; |semaforo|Add1~20         ; out0             ;
+; |semaforo|Add1~21         ; |semaforo|Add1~21         ; out0             ;
+; |semaforo|Add1~22         ; |semaforo|Add1~22         ; out0             ;
+; |semaforo|Add1~23         ; |semaforo|Add1~23         ; out0             ;
+; |semaforo|Add1~24         ; |semaforo|Add1~24         ; out0             ;
+; |semaforo|Add1~25         ; |semaforo|Add1~25         ; out0             ;
+; |semaforo|Add1~26         ; |semaforo|Add1~26         ; out0             ;
+; |semaforo|Add1~27         ; |semaforo|Add1~27         ; out0             ;
+; |semaforo|Add1~28         ; |semaforo|Add1~28         ; out0             ;
+; |semaforo|Add1~29         ; |semaforo|Add1~29         ; out0             ;
+; |semaforo|Add1~30         ; |semaforo|Add1~30         ; out0             ;
+; |semaforo|Add1~31         ; |semaforo|Add1~31         ; out0             ;
+; |semaforo|Add1~32         ; |semaforo|Add1~32         ; out0             ;
+; |semaforo|Add1~33         ; |semaforo|Add1~33         ; out0             ;
+; |semaforo|Add1~34         ; |semaforo|Add1~34         ; out0             ;
+; |semaforo|Add1~35         ; |semaforo|Add1~35         ; out0             ;
+; |semaforo|Add1~36         ; |semaforo|Add1~36         ; out0             ;
+; |semaforo|Add1~37         ; |semaforo|Add1~37         ; out0             ;
+; |semaforo|Add1~38         ; |semaforo|Add1~38         ; out0             ;
+; |semaforo|Add1~39         ; |semaforo|Add1~39         ; out0             ;
+; |semaforo|Add1~40         ; |semaforo|Add1~40         ; out0             ;
+; |semaforo|Add1~41         ; |semaforo|Add1~41         ; out0             ;
+; |semaforo|Add1~42         ; |semaforo|Add1~42         ; out0             ;
+; |semaforo|Add1~43         ; |semaforo|Add1~43         ; out0             ;
+; |semaforo|Add1~44         ; |semaforo|Add1~44         ; out0             ;
+; |semaforo|Add1~45         ; |semaforo|Add1~45         ; out0             ;
+; |semaforo|Add1~46         ; |semaforo|Add1~46         ; out0             ;
+; |semaforo|Add1~47         ; |semaforo|Add1~47         ; out0             ;
+; |semaforo|Add1~48         ; |semaforo|Add1~48         ; out0             ;
+; |semaforo|Add1~49         ; |semaforo|Add1~49         ; out0             ;
+; |semaforo|Add1~50         ; |semaforo|Add1~50         ; out0             ;
+; |semaforo|Add1~51         ; |semaforo|Add1~51         ; out0             ;
+; |semaforo|Add1~52         ; |semaforo|Add1~52         ; out0             ;
++---------------------------+---------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++--------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                 ;
++---------------------------+---------------------------+------------------+
+; Node Name                 ; Output Port Name          ; Output Port Type ;
++---------------------------+---------------------------+------------------+
+; |semaforo|counter_1s[18]  ; |semaforo|counter_1s[18]  ; regout           ;
+; |semaforo|counter_1s[17]  ; |semaforo|counter_1s[17]  ; regout           ;
+; |semaforo|counter_1s[16]  ; |semaforo|counter_1s[16]  ; regout           ;
+; |semaforo|counter_1s[15]  ; |semaforo|counter_1s[15]  ; regout           ;
+; |semaforo|counter_1s[14]  ; |semaforo|counter_1s[14]  ; regout           ;
+; |semaforo|counter_1s[13]  ; |semaforo|counter_1s[13]  ; regout           ;
+; |semaforo|counter_1s[12]  ; |semaforo|counter_1s[12]  ; regout           ;
+; |semaforo|counter_1s[11]  ; |semaforo|counter_1s[11]  ; regout           ;
+; |semaforo|counter_1s[10]  ; |semaforo|counter_1s[10]  ; regout           ;
+; |semaforo|counter_1s[9]   ; |semaforo|counter_1s[9]   ; regout           ;
+; |semaforo|counter_1s[8]   ; |semaforo|counter_1s[8]   ; regout           ;
+; |semaforo|counter_1s[7]   ; |semaforo|counter_1s[7]   ; regout           ;
+; |semaforo|counter_1s[6]   ; |semaforo|counter_1s[6]   ; regout           ;
+; |semaforo|counter_1s[5]   ; |semaforo|counter_1s[5]   ; regout           ;
+; |semaforo|counter_1s[4]   ; |semaforo|counter_1s[4]   ; regout           ;
+; |semaforo|counter_1s[3]   ; |semaforo|counter_1s[3]   ; regout           ;
+; |semaforo|counter_1s[2]   ; |semaforo|counter_1s[2]   ; regout           ;
+; |semaforo|counter_1s~0    ; |semaforo|counter_1s~0    ; out              ;
+; |semaforo|counter_1s~1    ; |semaforo|counter_1s~1    ; out              ;
+; |semaforo|counter_1s~2    ; |semaforo|counter_1s~2    ; out              ;
+; |semaforo|counter_1s~3    ; |semaforo|counter_1s~3    ; out              ;
+; |semaforo|counter_1s~4    ; |semaforo|counter_1s~4    ; out              ;
+; |semaforo|counter_1s~5    ; |semaforo|counter_1s~5    ; out              ;
+; |semaforo|counter_1s~6    ; |semaforo|counter_1s~6    ; out              ;
+; |semaforo|counter_1s~7    ; |semaforo|counter_1s~7    ; out              ;
+; |semaforo|counter_1s~8    ; |semaforo|counter_1s~8    ; out              ;
+; |semaforo|counter_1s~9    ; |semaforo|counter_1s~9    ; out              ;
+; |semaforo|counter_1s~10   ; |semaforo|counter_1s~10   ; out              ;
+; |semaforo|counter_1s~11   ; |semaforo|counter_1s~11   ; out              ;
+; |semaforo|counter_1s~12   ; |semaforo|counter_1s~12   ; out              ;
+; |semaforo|counter_1s~13   ; |semaforo|counter_1s~13   ; out              ;
+; |semaforo|counter_1s~14   ; |semaforo|counter_1s~14   ; out              ;
+; |semaforo|counter_1s~15   ; |semaforo|counter_1s~15   ; out              ;
+; |semaforo|counter_1s~16   ; |semaforo|counter_1s~16   ; out              ;
+; |semaforo|counter_1s~17   ; |semaforo|counter_1s~17   ; out              ;
+; |semaforo|counter_1s~18   ; |semaforo|counter_1s~18   ; out              ;
+; |semaforo|counter_1s~19   ; |semaforo|counter_1s~19   ; out              ;
+; |semaforo|counter_1s~20   ; |semaforo|counter_1s~20   ; out              ;
+; |semaforo|counter_1s~21   ; |semaforo|counter_1s~21   ; out              ;
+; |semaforo|counter_1s~22   ; |semaforo|counter_1s~22   ; out              ;
+; |semaforo|counter_1s~23   ; |semaforo|counter_1s~23   ; out              ;
+; |semaforo|counter_1s~24   ; |semaforo|counter_1s~24   ; out              ;
+; |semaforo|counter_1s[19]  ; |semaforo|counter_1s[19]  ; regout           ;
+; |semaforo|counter_1s[20]  ; |semaforo|counter_1s[20]  ; regout           ;
+; |semaforo|counter_1s[21]  ; |semaforo|counter_1s[21]  ; regout           ;
+; |semaforo|counter_1s[22]  ; |semaforo|counter_1s[22]  ; regout           ;
+; |semaforo|counter_1s[23]  ; |semaforo|counter_1s[23]  ; regout           ;
+; |semaforo|counter_1s[24]  ; |semaforo|counter_1s[24]  ; regout           ;
+; |semaforo|counter_1s[25]  ; |semaforo|counter_1s[25]  ; regout           ;
+; |semaforo|counter_1s[26]  ; |semaforo|counter_1s[26]  ; regout           ;
+; |semaforo|counter_1s[27]  ; |semaforo|counter_1s[27]  ; regout           ;
+; |semaforo|rst_n           ; |semaforo|rst_n           ; out              ;
+; |semaforo|current_state~1 ; |semaforo|current_state~1 ; out0             ;
+; |semaforo|current_state~9 ; |semaforo|current_state~9 ; out0             ;
+; |semaforo|Add1~3          ; |semaforo|Add1~3          ; out0             ;
+; |semaforo|Add1~4          ; |semaforo|Add1~4          ; out0             ;
+; |semaforo|Add1~5          ; |semaforo|Add1~5          ; out0             ;
+; |semaforo|Add1~6          ; |semaforo|Add1~6          ; out0             ;
+; |semaforo|Add1~7          ; |semaforo|Add1~7          ; out0             ;
+; |semaforo|Add1~8          ; |semaforo|Add1~8          ; out0             ;
+; |semaforo|Add1~9          ; |semaforo|Add1~9          ; out0             ;
+; |semaforo|Add1~10         ; |semaforo|Add1~10         ; out0             ;
+; |semaforo|Add1~11         ; |semaforo|Add1~11         ; out0             ;
+; |semaforo|Add1~12         ; |semaforo|Add1~12         ; out0             ;
+; |semaforo|Add1~13         ; |semaforo|Add1~13         ; out0             ;
+; |semaforo|Add1~14         ; |semaforo|Add1~14         ; out0             ;
+; |semaforo|Add1~15         ; |semaforo|Add1~15         ; out0             ;
+; |semaforo|Add1~16         ; |semaforo|Add1~16         ; out0             ;
+; |semaforo|Add1~17         ; |semaforo|Add1~17         ; out0             ;
+; |semaforo|Add1~18         ; |semaforo|Add1~18         ; out0             ;
+; |semaforo|Add1~19         ; |semaforo|Add1~19         ; out0             ;
+; |semaforo|Add1~20         ; |semaforo|Add1~20         ; out0             ;
+; |semaforo|Add1~21         ; |semaforo|Add1~21         ; out0             ;
+; |semaforo|Add1~22         ; |semaforo|Add1~22         ; out0             ;
+; |semaforo|Add1~23         ; |semaforo|Add1~23         ; out0             ;
+; |semaforo|Add1~24         ; |semaforo|Add1~24         ; out0             ;
+; |semaforo|Add1~25         ; |semaforo|Add1~25         ; out0             ;
+; |semaforo|Add1~26         ; |semaforo|Add1~26         ; out0             ;
+; |semaforo|Add1~27         ; |semaforo|Add1~27         ; out0             ;
+; |semaforo|Add1~28         ; |semaforo|Add1~28         ; out0             ;
+; |semaforo|Add1~29         ; |semaforo|Add1~29         ; out0             ;
+; |semaforo|Add1~30         ; |semaforo|Add1~30         ; out0             ;
+; |semaforo|Add1~31         ; |semaforo|Add1~31         ; out0             ;
+; |semaforo|Add1~32         ; |semaforo|Add1~32         ; out0             ;
+; |semaforo|Add1~33         ; |semaforo|Add1~33         ; out0             ;
+; |semaforo|Add1~34         ; |semaforo|Add1~34         ; out0             ;
+; |semaforo|Add1~35         ; |semaforo|Add1~35         ; out0             ;
+; |semaforo|Add1~36         ; |semaforo|Add1~36         ; out0             ;
+; |semaforo|Add1~37         ; |semaforo|Add1~37         ; out0             ;
+; |semaforo|Add1~38         ; |semaforo|Add1~38         ; out0             ;
+; |semaforo|Add1~39         ; |semaforo|Add1~39         ; out0             ;
+; |semaforo|Add1~40         ; |semaforo|Add1~40         ; out0             ;
+; |semaforo|Add1~41         ; |semaforo|Add1~41         ; out0             ;
+; |semaforo|Add1~42         ; |semaforo|Add1~42         ; out0             ;
+; |semaforo|Add1~43         ; |semaforo|Add1~43         ; out0             ;
+; |semaforo|Add1~44         ; |semaforo|Add1~44         ; out0             ;
+; |semaforo|Add1~45         ; |semaforo|Add1~45         ; out0             ;
+; |semaforo|Add1~46         ; |semaforo|Add1~46         ; out0             ;
+; |semaforo|Add1~47         ; |semaforo|Add1~47         ; out0             ;
+; |semaforo|Add1~48         ; |semaforo|Add1~48         ; out0             ;
+; |semaforo|Add1~49         ; |semaforo|Add1~49         ; out0             ;
+; |semaforo|Add1~50         ; |semaforo|Add1~50         ; out0             ;
+; |semaforo|Add1~51         ; |semaforo|Add1~51         ; out0             ;
+; |semaforo|Add1~52         ; |semaforo|Add1~52         ; out0             ;
++---------------------------+---------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Simulator
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+    Info: Processing started: Wed Oct 07 19:50:33 2020
+Info: Command: quartus_sim --simulation_results_format=VWF semaforo -c semaforo
+Info (324025): Using vector source file "D:/altera/13.0sp1/miniproj/semaforo/Waveform16.vwf"
+Info (310003): Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info (310004): Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info (310002): Simulation partitioned into 1 sub-simulations
+Info (328053): Simulation coverage is      56.30 %
+Info (328052): Number of transitions in simulation is 41397
+Info (324045): Vector file semaforo.sim.vwf is saved in VWF text format. You can compress it into CVWF format in order to reduce file size. For more details please refer to the Quartus II Help.
+Info: Quartus II 64-Bit Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 4441 megabytes
+    Info: Processing ended: Wed Oct 07 19:50:34 2020
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
+
+

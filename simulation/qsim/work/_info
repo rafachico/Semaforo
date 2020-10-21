@@ -1,0 +1,81 @@
+m255
+K3
+13
+cModel Technology
+Z0 dD:\altera\13.0sp1\miniproj\semaforo\simulation\qsim
+vsemaforo
+Z1 IS0fW1nVfzaZi_KOk8O40R3
+Z2 V_=9lLBJlzTk^]HXhoW?>n3
+Z3 dD:\altera\13.0sp1\miniproj\semaforo\simulation\qsim
+Z4 w1602035431
+Z5 8semaforo.vo
+Z6 Fsemaforo.vo
+L0 31
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 !s90 -work|work|semaforo.vo|
+Z9 o-work work -O0
+!i10b 1
+Z10 !s100 5UWJ9N7j[42nQhl@kNz8Y2
+!s85 0
+Z11 !s108 1602035433.130000
+Z12 !s107 semaforo.vo|
+!s101 -O0
+vsemaforo_vlg_check_tst
+!i10b 1
+!s100 ioYh@4B4PfUVOfUo?I=zm0
+I:AbQ6M<G_Xc_MJzF0Q8Yc0
+V?ilXY0QTbIXA_k@Jj<gDo1
+R3
+Z13 w1602035430
+Z14 8semaforo.vt
+Z15 Fsemaforo.vt
+L0 61
+R7
+r1
+!s85 0
+31
+Z16 !s108 1602035433.569000
+Z17 !s107 semaforo.vt|
+Z18 !s90 -work|work|semaforo.vt|
+!s101 -O0
+R9
+vsemaforo_vlg_sample_tst
+!i10b 1
+Z19 !s100 Bg26iX>Y7mnSIFRoh6oWa1
+Z20 IISM9aGIUMI0z<AVi`BdFE0
+Z21 VNchaeT7AYFkg6a]8AjZTh3
+R3
+R13
+R14
+R15
+L0 29
+R7
+r1
+!s85 0
+31
+R16
+R17
+R18
+!s101 -O0
+R9
+vsemaforo_vlg_vec_tst
+!i10b 1
+!s100 hN;3L[9L@@WAc5J9QQc]K3
+I8<CGhY=T^b3Q]E4c7ShzJ3
+Z22 V9i]<XB@cjdiSzoNNz[7<O0
+R3
+R13
+R14
+R15
+L0 767
+R7
+r1
+!s85 0
+31
+R16
+R17
+R18
+!s101 -O0
+R9
